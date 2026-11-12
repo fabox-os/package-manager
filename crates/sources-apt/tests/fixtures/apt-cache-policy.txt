@@ -1,0 +1,38 @@
+firefox:
+  Installed: 131.0+build1-0ubuntu0.24.04.1
+  Candidate: 132.0+build1-0ubuntu0.24.04.1
+  Version table:
+     132.0+build1-0ubuntu0.24.04.1 500
+        500 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages
+ *** 131.0+build1-0ubuntu0.24.04.1 500
+        500 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages
+        100 /var/lib/dpkg/status
+vlc:
+  Installed: 3.0.20-3build6
+  Candidate: 3.0.20-3build6
+  Version table:
+ *** 3.0.20-3build6 500
+        500 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages
+        100 /var/lib/dpkg/status
+hydra:
+  Installed: 2.0.0
+  Candidate: 2.0.0
+  Version table:
+ *** 2.0.0 500
+        500 https://ppa.launchpadcontent.net/someone/tools/ubuntu noble/main amd64 Packages
+        100 /var/lib/dpkg/status
+mypkg:
+  Installed: 0.9.1
+  Candidate: 0.9.1
+  Version table:
+ *** 0.9.1 100
+        100 /var/lib/dpkg/status
+libfoo:
+  Installed: 2.0
+  Candidate: 2.1
+  Version table:
+     2.1 500
+        500 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages
+ *** 2.0 500
+        500 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages
+        100 /var/lib/dpkg/status

@@ -1,0 +1,3 @@
+org.gimp.GIMP	GIMP	2.10.36	flathub	system
+com.example.Tool	Tool		myremote	user
+org.videolan.VLC	VLC	3.0.20	flathub	system

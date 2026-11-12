@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Package Manager
+Comment=Update APT, Flatpak and GitHub apps in one place
+Exec=package-manager
+Icon=org.packagemanager.PackageManager
+Terminal=false
+Categories=System;PackageManager;
+StartupWMClass=org.packagemanager.PackageManager

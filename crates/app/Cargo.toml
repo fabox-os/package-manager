@@ -1,0 +1,24 @@
+[package]
+name = "package-manager-app"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[features]
+# Development only: `--screenshot-dir DIR [--demo-repo owner/repo]` saves PNGs of the window and exits.
+screenshots = ["dep:image"]
+# `cargo run -p package-manager-app --features fake -- --fake` runs on built-in sample data.
+fake = ["package-manager-runtime/fake"]
+image = ["dep:image"]
+
+[dependencies]
+package-manager-core.workspace = true
+package-manager-runtime = { path = "../runtime" }
+tokio.workspace = true
+tracing.workspace = true
+iced = { version = "0.13.1", features = ["tokio", "image", "svg"] }
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
+anyhow = "1.0.104"
+package-manager-config = { version = "1.0.0", path = "../config" }
+image = { version = "0.25.6", default-features = false, features = ["png"], optional = true }

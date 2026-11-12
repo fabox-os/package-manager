@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<!--
+  Policy for the privileged helper. Installed to /usr/share/polkit-1/actions/ by the package.
+
+  The helper path below must be exactly where the package installs the helper.
+  `auth_admin` (and deliberately NOT `auth_admin_keep`) means an administrator password is
+  asked for every privileged operation. A cached authorization would let any other program
+  running as the same user use the helper silently for a few minutes.
+-->
+<policyconfig>
+  <vendor>Package Manager</vendor>
+  <action id="org.packagemanager.helper.run">
+    <description>Install and update software</description>
+    <message>Authentication is required to install or update software</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/libexec/package-manager/package-manager-helper</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">false</annotate>
+  </action>
+</policyconfig>

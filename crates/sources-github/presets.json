@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Hydra Launcher",
+    "package_name": "hydralauncher",
+    "repo": "hydralauncher/hydra",
+    "asset_pattern": "hydralauncher_{version}_amd64.deb"
+  }
+]

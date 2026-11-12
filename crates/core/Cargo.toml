@@ -1,0 +1,18 @@
+[package]
+name = "package-manager-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+async-trait.workspace = true
+chrono.workspace = true
+semver.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+[features]
+# Deterministic in-memory source for UI development and tests. Never enabled in release builds.
+fake = []

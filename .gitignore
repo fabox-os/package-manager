@@ -1,0 +1,6 @@
+target/
+*.deb
+downloads/
+*.db
+.shots/
+dist/

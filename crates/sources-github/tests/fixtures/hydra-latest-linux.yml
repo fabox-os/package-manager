@@ -1,0 +1,15 @@
+version: 4.4.0
+files:
+  - url: hydralauncher-4.4.0.AppImage
+    sha512: Q5lwe6FfN/68gvwEt3ZTalTxzC056EFnk7TMbOfs71CB2qCXX7G+IBOvHsmyhtoPUO7zNl2V/Jcu6RBIOBrJEw==
+    size: 274571422
+    blockMapSize: 286898
+  - url: hydralauncher_4.4.0_amd64.deb
+    sha512: 12Auts+kYNchTwcNfldfeBcARkVvq32vq9GxTOVTIFjcP2/yb3TF+qbUBkc1LzqU8+YqukbXB/uTBvG54Z2jmw==
+    size: 178442846
+  - url: hydralauncher-4.4.0.x86_64.rpm
+    sha512: 65laYOesikSMQwwZJ93cvDYNWYUxv+m9n58gHiozr8pWNAitGVrQbV6f+xWZXLL+8+Xt7JXH9dzRgLFrhOXl/Q==
+    size: 175918453
+path: hydralauncher-4.4.0.AppImage
+sha512: Q5lwe6FfN/68gvwEt3ZTalTxzC056EFnk7TMbOfs71CB2qCXX7G+IBOvHsmyhtoPUO7zNl2V/Jcu6RBIOBrJEw==
+releaseDate: '2026-11-05T20:15:17.377Z'

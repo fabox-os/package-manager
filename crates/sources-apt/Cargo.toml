@@ -1,0 +1,15 @@
+[package]
+name = "package-manager-sources-apt"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+package-manager-core.workspace = true
+async-trait.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+package-manager-core = { workspace = true, features = ["fake"] }
+tokio.workspace = true

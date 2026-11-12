@@ -1,0 +1,24 @@
+[package]
+name = "package-manager-runtime"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[features]
+# Adds the in-memory fake source for UI development. Never part of a default build.
+fake = ["package-manager-core/fake"]
+
+[dependencies]
+package-manager-core.workspace = true
+package-manager-config = { path = "../config" }
+package-manager-icons = { path = "../icons" }
+package-manager-sources-apt = { path = "../sources-apt" }
+package-manager-sources-flatpak = { path = "../sources-flatpak" }
+package-manager-sources-github = { path = "../sources-github" }
+async-trait.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+tokio.workspace = true

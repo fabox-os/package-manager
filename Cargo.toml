@@ -1,0 +1,28 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/app",
+    "crates/core",
+    "crates/sources-apt",
+    "crates/sources-flatpak",
+    "crates/sources-github",
+    "crates/icons",
+    "crates/helper",
+    "crates/config",
+    "crates/runtime",
+]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.80"
+license = "GPL-3.0-or-later"
+
+[workspace.dependencies]
+async-trait = "0.1"
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+semver = "1"
+thiserror = "2"
+tokio = { version = "1", features = ["sync", "rt", "macros", "time", "process", "io-util", "fs", "net"] }
+tracing = "0.1"
+package-manager-core = { path = "crates/core" }

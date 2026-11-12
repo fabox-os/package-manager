@@ -1,0 +1,5 @@
+firefox: /usr/share/applications/firefox.desktop
+gnome-control-center: /usr/share/applications/gnome-datetime-panel.desktop
+gnome-control-center: /usr/share/applications/gnome-control-center.desktop
+libfoo:amd64, libfoo-data: /usr/share/applications/foo-viewer.desktop
+mypkg: /usr/share/applications/mypkg.desktop

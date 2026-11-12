@@ -1,0 +1,2 @@
+org.gimp.GIMP	2.10.38	flathub
+com.example.Tool	1.1	myremote
